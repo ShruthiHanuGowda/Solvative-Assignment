@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  color: rgb(33, 37, 41);
+  font-size: 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.searchBox {
+  position: relative;
+  display: inline-block;
+}
+
+.pageSetting {
+  display: flex;
+}
+
+.pageContainer {
+  margin-left: auto;
+}
+
+.tableContainer {
+  display: grid;
+  gap: 16px;
+}
+
+.searchIcon {
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 2px;
+  height: 24px;
+  padding: 0 4px;
+  line-height: 24px;
+  background-color: white;
+  pointer-events: none;
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 7px;
+  font-size: 12px;
+  color: #495057;
+}
+
+.pageContainer {
+  gap: 16px;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.searchVal {
+  padding: 16px;
+}
+
+.search-container {
+  justify-content: end;
+}
+
+.searchInput {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px 6px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.pageInput {
+  width: 160px;
+  height: 35px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px 6px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.paginationContainer {
+  margin-top: 50px;
+}
+
+input:focus {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: red;
+  text-align: left;
+}
+
+.pageContent {
+  justify-content: end;
+  gap: 0px;
+  margin-right: 15px;
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+.message {
+  height: 40px;
+  align-items: center;
+}
+
+.paginationText {
+  text-transform: capitalize;
+}
+
+.countryName {
+  margin-left: "5px" !important;
+}
